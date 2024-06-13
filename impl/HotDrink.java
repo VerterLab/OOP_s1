@@ -6,7 +6,7 @@ import OOP_s1.Product;
 
 public class HotDrink extends Product {
     int temperature;
-    float volume;
+    int volume;
 
     public HotDrink(String name, double price, LocalDate releaseDate, int volume, int temperature) {
         super(name, price, releaseDate);
@@ -31,8 +31,8 @@ public class HotDrink extends Product {
     @Override
     public String toString() {
         return "HotDrink{" +
-                "name=" + name +
-                " volume=" + volume +
+                "name='" + name + '\'' +
+                ", volume=" + volume +
                 ", temperature=" + temperature +
                 '}';
     }

@@ -41,7 +41,7 @@ public class BottleOfWater extends Product {
                 "name='" + name + '\'' +
                 ", price=" + price +
                 ", releaseDate=" + releaseDate +
-                "volume=" + volume +
+                ", volume=" + volume +
                 ", pack='" + pack + '\'' +
                 ", isSpark=" + isSpark +
                 '}';

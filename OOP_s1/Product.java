@@ -12,7 +12,7 @@ public class Product {
     protected LocalDate releaseDate;
 
     /*
-     * Product(String name,)
+     * Product(String name...)
      */
     public Product(String name, double price, LocalDate releaseDate) {
         this.name = name;
@@ -38,7 +38,6 @@ public class Product {
     }
     @Override
     public String toString() {
-        // TODO Auto-generated method stub
-        return "Product{" + "name= " + name + '\'' + ", price= " + price + ", releaseDate=" + releaseDate;
+        return "Product{" + "name= " + name  + ", price= " + price + ", releaseDate=" + releaseDate;
     }
 }

@@ -27,12 +27,13 @@ public class ProductMain {
 
         HotDrink hotdrink1 = new HotDrink("tea", 10, LocalDate.of(2024, 5, 3), 2, 80);
         HotDrink hotdrink2 = new HotDrink("tea", 15, LocalDate.of(2024, 5, 3), 1, 90);
+
         HotDrinkVendingMachine hd = new HotDrinkVendingMachine();
         hd.addProducts(List.of(hotdrink1, hotdrink1, hotdrink2, hotdrink2));
         System.out.println(hd.getProducts());
-        hd.getProduct("tea",1,90);
+        System.out.println();
+        hd.getProduct("tea", 1, 90);
         System.out.println(hd.getProducts());
-
 
     }
 }

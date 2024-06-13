@@ -31,8 +31,6 @@ public class VendingMachine {
                 return result;
             }
         }
-        // - так тоже правильно --> throw new RuntimeException("No such product:" +
-        // name);
         System.out.println("No such product:" + name);
         return null;
     }
@@ -43,18 +41,15 @@ public class VendingMachine {
                 HotDrink hotDrink = (HotDrink) product;
                 if (hotDrink.getName().equals(name) && hotDrink.getVolume() == valume
                         && hotDrink.getTemperature() == temperature) {
-
                     Product result = hotDrink;
-                    System.out.println();
                     System.out.println("product down --> " + result);
+                    System.out.println();
                     products.remove(hotDrink);
                     return result;
 
                 }
             }
         }
-        // - так тоже правильно --> throw new RuntimeException("No such product:" +
-        // name);
         System.out.println("No such product:" + name);
         return null;
     }
